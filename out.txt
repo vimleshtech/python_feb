@@ -1,0 +1,8 @@
+11,raman,male,10000
+22,monika,female,45000
+34,jaint,male,8999
+89,gaurav,male,5444
+12,aksh,male,12000
+13,mohit,12300,230000
+98,kmaal,male,34000
+40,nanm,male,8900
