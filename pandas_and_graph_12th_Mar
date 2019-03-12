@@ -1,0 +1,106 @@
+'''
+There following module to handle tabular data and for data visualization 
+
+
+-pandas
+-matplotlib
+
+
+Step 1:
+	go to python installation directory
+	go to script folder
+	
+
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\Scripts
+	
+
+Step 2:
+	pip install pandas
+	pip install matplotlib
+
+	
+  '''
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+df = pd.read_csv(r'C:\Users\vkumar15\Documents\Sandbox\Excel\emp.csv')
+print(df) 
+
+#print all columns
+print(df.columns)
+
+#print row and col count
+print(df.shape)
+
+#show top rows
+print(df.head()) #default first 5 rows
+print(df.head(2)) #return top 2 rows
+
+
+#show from buttom
+print(df.tail())#default last 5
+print(df.tail(3))
+
+
+#show given column
+print(df['salary'])
+
+#convert dataframe/table to list (2nd list)
+data = df.values
+print(data)
+
+#order by : sort the data
+print(df.sort_values('salary',ascending=True))
+print(df.sort_values('salary',ascending=False))
+
+
+
+##group by
+print(df.groupby('gender').size())
+print(df.groupby('gender').sum()) #sum of all numeric column
+print(df.groupby('gender').sum()['salary'])
+
+#search or filter
+#out = df.iloc[df['salary']>23000]
+#print(out)
+
+
+
+##kind=box , line , bar 
+#df.plot(kind='bar', subplots=True, layout=(2,2), sharex=False, sharey=False)
+#plt.show()
+
+
+dfn=pd.DataFrame()
+dfn['salary'] = df['salary']
+
+
+dfn.hist()
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
