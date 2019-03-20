@@ -1,0 +1,60 @@
+Correlation
+Regression
+Anova
+
+----------------------------
+Code Debug : error handling
+----------------------------
+
+
+========================
+Correlation : To get dependency of one varibale(column/feature) to another with each other  
+========================
+Example:
+	Cars:
+	-----------
+	mpg   cc    weight  cyl	
+	18    1400   1550    2
+	14    1800   1850    3
+	20    1200   1150    2
+	6     2800   2550    4
+	12    1900   1850    3
+	22    1000   850     2
+
+Corr:
+	will be always -1 to +1
+	-1 : negative impact
+	+1 : positive impact   .6
+	0  : no impact 
+
+Regression: get predict the response based on given input
+=====================
+Exmaple:
+	y~x	
+	y : is response/dependent variable (score)
+	x : is input/independent variable (hours of study)
+
+
+There are following type of regreesion:
+	1. linear regression 	: one dependent and one independent
+		Example: data/variable must numeric 
+	2. multiple regreesion  : one dependent and multiple independent 	
+		Example: data/variable must numeric 		
+	3. logistics 		: validate/get the accuracy of categorial data
+		Example: 
+			data should be like this:
+				1 or 0
+				y or n 
+
+
+		
+	
+
+
+
+
+
+
+
+
+
