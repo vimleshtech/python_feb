@@ -1,0 +1,148 @@
+<html>
+
+<head>
+
+
+    <style type="text/css" rel="stylesheet">
+    
+  
+    a{
+        color:white;
+        text-decoration-line: none;
+    }
+
+    .dv-left{
+
+        width: 40%;
+        float: left;
+        border-right: 1px solid teal;
+        height: 350px;
+    }
+    .dv-right{
+
+        width: 56%;
+        float: left;
+        height: 350px;
+        
+}
+
+    </style>
+
+    <link href="mystyle.css" rel="stylesheet" type="text/css" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    -->
+    <script>
+
+        function test()
+        {
+            alert('hi');
+
+            var e,p;
+            e = document.getElementById('email').value;
+
+            p = document.getElementById('pwd').value;
+
+            if(e == "test@gmail.com" && p=="test")
+            {
+                alert('login success!');
+                window.location ="aboutus.htm";
+
+            }
+            else{
+                alert('email and pwd didnt match');
+            }
+
+            geneate_control();
+        }
+
+        function frm_reset(){
+            document.getElementById('email').value="";
+
+            document.getElementById('pwd').value="";
+        }
+
+
+        function geneate_control(){
+
+            for(var i=1; i<=100; i++)
+            {
+
+
+                document.getElementById('out').innerHTML += "<input type='button' value='"+i+"' />";
+            }
+
+        }
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <div class="header">
+                Template of Design
+    </div>
+    <div class="bd">
+
+              <div class="dv-left">
+                    Menu Option
+              </div>
+              <div class="dv-right">
+                
+                    <p>
+                        <input id="email" type="text"
+                        class="form-control" placeholder="enter email" /> 
+                    </p>
+                    <p>
+                          <input id="pwd"
+                          class="form-control"
+                           type="password" placeholder="enter password" />  
+                    </p>
+                    <p>
+                        <input
+                        class="btn btn-primary"
+                         type="button"
+                         onclick="test()" value="Login" />
+
+
+               
+                         <input
+                         class="btn btn-danger"
+                       onclick="frm_reset()"    type="button" value="Reset" />
+           
+                    </p>
+
+                    <p id="out">
+
+                    </p>
+
+              </div>
+    </div>
+    <div class="footer">
+
+
+            <p>
+                All copy right reserved @2019
+            </p>
+            <p>
+                <a style="color:white;" href="" >Home</a>
+                <a href="aboutus.htm" >About US</a>
+                <a href="" >Contact US</a>
+                <a href="" >New Request</a>
+                <a href="" >History</a>
+                <a href="" >Place Order</a>
+
+            </p>
+            <p>
+                <a href="" >Home</a>
+                <a href="" >Home</a>
+                <a href="" >Home</a>
+                <a href="" >Home</a>
+                <a href="" >Home</a>
+                <a href="" >Home</a>
+                
+            </p>
+    </div>
+</body>
+</html>

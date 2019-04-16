@@ -1,0 +1,41 @@
+.header{
+
+    height: 100px;
+    color: bisque;
+    background-color: aquamarine;
+    padding-left: 120px;  /* inner sapce */
+    padding-top: 30px;
+    font-size: 24px;
+    font-family: bolder;
+    border-radius: 15px 15px 20px 15px ;
+    width: 85%;
+
+    margin:auto;  /* outer space, auto : center */
+  /* margin-left: 300px;*/
+}
+
+
+.footer{
+
+    height: 200;
+    color: white;
+    background-color:grey;
+    padding-left: 120px;  /* inner sapce */
+    padding-right: 50px;
+    font-size: 18px;
+    font-family: bolder;
+    width: 80%;
+    border-radius: 15px 15px 20px 15px ;
+    margin:auto;  
+}
+
+.bd{
+height: 350px;
+font-size: 12px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color:teal;
+width: 85%;
+margin:auto;  
+
+
+}
