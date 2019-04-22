@@ -1,0 +1,83 @@
+<html>
+<head>
+
+    <script>
+
+    function test(){
+            alert('h');
+    }
+
+    function add(){
+
+        alert('in add');
+
+    }
+
+    function new_table(){
+
+        var r,c;
+        r = parseInt( document.getElementById('row').value);
+        c =parseInt( document.getElementById('col').value);
+
+        var output ="<table>";
+
+        for(var i =0; i<r; i++){
+             output +="<tr>"; 
+            for(var j =0; j<c; j++){
+                output +="<td> <input type='text'/> </td> "; 
+
+            }
+            output +="</tr>"; 
+        }
+
+         var d = new Date();
+
+         output +="</table>"+d;
+
+         document.getElementById('out').innerHTML=output;
+
+    }
+    </script>
+</head>
+<body>
+
+        <div>
+            <input type="button" onmousemove="add()" 
+            onclick="test()" value="Click Me" />
+            <span  onmouseover="add()"> Test  </span>
+
+            <input type="text"   onkeydown="add()" />
+
+        </div>
+        <div>
+                Table Structure :
+                <input type="text" placeholder="enter no for rows" id="row" />
+                <input type="text" placeholder="enter no for cols" id="col" />
+
+                <input type="button" onclick="new_table()" value="Generate Table" />
+
+
+        </div>
+        <div id="out">
+                <table>
+                    <tr>
+                        <td> 1</td>
+                        <td> 2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4 </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Test 
+                        </td>
+                        <td>
+                            hello
+                        </td>
+                    </tr>
+                </table>
+        </div>
+</body>
+
+</html>
