@@ -1,0 +1,55 @@
+<html>
+
+<head>
+
+    <script>
+    
+    function hideAndShow(ctrl){
+
+
+        var id = ctrl.id;
+
+        var nid  = id.replace('h','c');
+        var sid  = id.replace('h','s');
+
+        document.getElementById('c_1').style.display="none";
+        document.getElementById('c_2').style.display="none";
+        document.getElementById('c_3').style.display="none";
+
+        document.getElementById('s_1').innerHTML="+";
+        document.getElementById('s_2').innerHTML="+";
+        document.getElementById('s_3').innerHTML="+";
+
+        document.getElementById(nid).style.display="";//show 
+        document.getElementById(sid).innerHTML="-";//show 
+
+
+
+    }
+    </script>
+</head>
+<body>
+
+    <div id="h_1" onclick="hideAndShow(this)" style="background-color: aqua;">
+        <span id="s_1">+</span> Head 1
+    </div>
+    <div id="c_1" style="display: none;">
+        content 1lksjh sgjhgshg sfhgsfghs fgsf ghdghfdgdhf
+    </div>
+
+    <div id="h_2" onclick="hideAndShow(this)" style="background-color: aqua;">
+            <span id="s_2">+</span> Head 2
+    </div>
+    <div id="c_2" style="display: none;">
+        content 2 lksjh sgjhgshg sfhgsfghs fgsf ghdghfdgdhf
+    </div>
+        
+    <div id="h_3" onclick="hideAndShow(this)" style="background-color: aqua;">
+            <span id="s_3">+</span> Head 3
+    </div>
+    <div id="c_3" style="display: none;">
+            content 3lksjh sgjhgshg sfhgsfghs fgsf ghdghfdgdhf
+    </div>
+        
+</body>
+</html>

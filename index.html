@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+    <script>
+        function example(){
+
+        (function(){
+            // do some stuff
+            document.getElementById('out').innerHTML+="<input type='text' />";
+
+            setTimeout(arguments.callee, 2000);
+
+        })();
+
+                
+
+        }
+    </script>
+</head>
+<body>
+
+        <div>
+            <marquee> hi , this is test timer</marquee>
+
+        </div>
+
+        <div>
+            <input onclick="example()
+            " type="button" value="Start" />
+        </div>
+        <div id="out"> </div>
+
+        
+</body>
+</html>
